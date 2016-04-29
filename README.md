@@ -9,6 +9,8 @@ Extended Phusion Passenger Docker image
 - Ruby 2.3 incl. dev headers
 - Bundler
 - ImageMagick 6.7.7-10
+- MySQL 5.5 client incl. dev headers
+- PostgreSQL 9.4 client incl. dev headers
 
 ## Licence
 
