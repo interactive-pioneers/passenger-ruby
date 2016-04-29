@@ -1,4 +1,4 @@
-# passenger-ruby
+# passenger-ruby [![](https://img.shields.io/badge/licence-GPL-bd0000.svg)](https://github.com/interactive-pioneers/passenger-ruby/blob/master/LICENSE)
 
 Extended Phusion Passenger Docker image
 
