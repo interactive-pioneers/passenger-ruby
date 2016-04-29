@@ -15,6 +15,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN ruby-switch --set ruby2.3
 
+RUN gem install bundler --no-ri --no-rdoc
+
 # Enable nginx
 RUN rm -f /etc/service/nginx/down /etc/nginx/sites-enabled/default
 
