@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y \
   libpcre3-dev \
   libcurl4-gnutls-dev \
   libgmp3-dev \
-  ruby2.3
+  ruby2.3 \
+  ruby2.3-dev
 
 RUN ruby-switch --set ruby2.3
 
