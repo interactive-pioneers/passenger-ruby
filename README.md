@@ -1,4 +1,4 @@
-# passenger-ruby [![](https://img.shields.io/badge/licence-GPL-bd0000.svg)](https://github.com/interactive-pioneers/passenger-ruby/blob/master/LICENSE) [![](https://imagelayers.io/badge/ipioneers/passenger-ruby:latest.svg)](https://imagelayers.io/?images=ipioneers/passenger-ruby:latest)
+# passenger-ruby [![](https://img.shields.io/badge/licence-GPL-bd0000.svg)](https://github.com/interactive-pioneers/passenger-ruby/blob/master/LICENSE) [![](https://imagelayers.io/badge/ipioneers/passenger-ruby:latest.svg)](https://imagelayers.io/?images=ipioneers/passenger-ruby:latest 'Get your own badge on imagelayers.io')
 
 Extended Phusion Passenger Docker image
 
