@@ -14,4 +14,4 @@ Extended Phusion Passenger Docker image
 
 ## Licence
 
-Copyright © 2016 Interactive Pioneers GmbH. Licenced under [GPL-3](LICENSE).
+Copyright © 2016 Interactive Pioneers GmbH. Licenced under [GPL-3](https://github.com/interactive-pioneers/passenger-ruby/blob/master/LICENSE).
