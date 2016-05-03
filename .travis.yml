@@ -15,7 +15,3 @@ before_install:
 
 script:
   - ./test/test.sh
-
-notifications:
-  email:
-    - at@interactive-pioneers.de
