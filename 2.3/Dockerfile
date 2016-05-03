@@ -23,6 +23,8 @@ RUN ruby-switch --set ruby2.3
 
 RUN gem install bundler --no-ri --no-rdoc
 
+RUN npm install -g webpack bower
+
 # Enable nginx
 RUN rm -f /etc/service/nginx/down /etc/nginx/sites-enabled/default
 
