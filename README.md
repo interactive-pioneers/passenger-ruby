@@ -11,6 +11,9 @@ Extended Phusion Passenger Docker image
 - ImageMagick 6.7.7-10
 - MySQL 5.5 client incl. dev headers
 - PostgreSQL 9.4 client incl. dev headers
+- Node.js 0.12.13
+- Webpack 1.13.0
+- Bower 1.7.9
 
 ## Licence
 

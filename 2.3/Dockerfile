@@ -16,7 +16,8 @@ RUN apt-get update && apt-get install -y \
   libpq-dev \
   postgresql-client \
   ruby2.3 \
-  ruby2.3-dev
+  ruby2.3-dev \
+  nodejs
 
 RUN ruby-switch --set ruby2.3
 
