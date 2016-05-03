@@ -6,8 +6,8 @@ services:
       - 80
     volumes:
       - .:/home/app
-      - test/.docker/nginx/sites-enabled:/etc/nginx/sites-enabled
-      - test/.docker/init.d/init.sh:/etc/my_init.d/init.sh
+      - ./test/.docker/nginx/sites-enabled:/etc/nginx/sites-enabled
+      - ./test/.docker/init.d/init.sh:/etc/my_init.d/init.sh
     ports:
       - "80:80"
     environment:
