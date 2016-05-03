@@ -15,7 +15,9 @@ before_install:
   - chmod +x docker-compose
   - sudo mv docker-compose /usr/local/bin
   - docker-compose --version
+
+install:
   - docker-compose -f ./test/docker-compose.yml up -d
 
 script:
-  - bash ./test/test.sh
+  - ./test/test.sh
