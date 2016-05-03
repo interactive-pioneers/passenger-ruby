@@ -1,4 +1,4 @@
-# passenger-ruby [![](https://img.shields.io/badge/licence-GPL-bd0000.svg)](https://github.com/interactive-pioneers/passenger-ruby/blob/master/LICENSE)
+# passenger-ruby [![](https://img.shields.io/badge/licence-GPL-bd0000.svg)](https://github.com/interactive-pioneers/passenger-ruby/blob/master/LICENSE) [![Build Status](https://travis-ci.org/interactive-pioneers/passenger-ruby.svg?branch=feature%2Ftests)](https://travis-ci.org/interactive-pioneers/passenger-ruby)
 
 Extended Phusion Passenger Docker image
 
