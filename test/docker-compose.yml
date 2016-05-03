@@ -1,0 +1,15 @@
+version: '2'
+services:
+  web:
+    build: ../2.3
+    expose:
+      - 80
+    volumes:
+      - .:/home/app
+      - test/.docker/nginx/sites-enabled:/etc/nginx/sites-enabled
+      - test/.docker/init.d/init.sh:/etc/my_init.d/init.sh
+    ports:
+      - "80:80"
+    environment:
+      - RAILS_ENV=test
+      - PASSENGER_APP_ENV=test
