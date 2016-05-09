@@ -19,6 +19,14 @@ RUN apt-get update && apt-get install -y \
   ruby2.3-dev \
   nodejs
 
+RUN curl -O http://www.imagemagick.org/download/ImageMagick.tar.gz \
+  && tar -xzvf ImageMagick.tar.gz /tmp/ImageMagick \
+  && cd /tmp/ImageMagick \
+  && ./configure \
+  && make \
+  && make install \
+  && ldconfig /usr/local/lib
+
 RUN ruby-switch --set ruby2.3
 
 RUN gem install bundler --no-ri --no-rdoc
