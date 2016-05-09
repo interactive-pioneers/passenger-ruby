@@ -8,7 +8,7 @@ Extended Phusion Passenger Docker image
 - Phusion Passenger 5.0.15 with nginx enabled
 - Ruby 2.3 incl. dev headers
 - Bundler
-- ImageMagick 6.7.7-10
+- ImageMagick 7.0.1-2
 - MySQL 5.5 client incl. dev headers
 - PostgreSQL 9.4 client incl. dev headers
 - Node.js 0.12.13
