@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN cd /tmp \
   && curl -O http://www.imagemagick.org/download/ImageMagick.tar.gz \
-  && tar -xzvf ImageMagick.tar.gz \
+  && tar -xzf ImageMagick.tar.gz -C ImageMagick \
   && chown -R root:root ImageMagick \
   && cd ImageMagick \
   && ./configure \
