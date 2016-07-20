@@ -7,7 +7,6 @@ ENV HOME /root
 RUN apt-get update && apt-get install -y \
   libxml2-dev \
   libxslt1-dev \
-  imagemagick \
   libpcre3-dev \
   libcurl4-gnutls-dev \
   libgmp3-dev \
