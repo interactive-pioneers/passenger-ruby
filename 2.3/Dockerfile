@@ -1,4 +1,4 @@
-FROM phusion/passenger-ruby22
+FROM phusion/passenger-ruby23
 
 MAINTAINER Ain Tohvri <at@interactive-pioneers.de>
 
@@ -29,8 +29,6 @@ RUN cd /tmp \
   && make \
   && make install \
   && ldconfig /usr/local/lib
-
-RUN ruby-switch --set ruby2.3
 
 RUN gem install bundler --no-ri --no-rdoc
 
