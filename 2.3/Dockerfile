@@ -14,7 +14,6 @@ RUN apt-get update && apt-get install -y \
   mysql-client \
   libpq-dev \
   postgresql-client \
-  ruby2.3 \
   ruby2.3-dev \
   nodejs
 
