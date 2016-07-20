@@ -19,12 +19,11 @@ RUN apt-get update && apt-get install -y \
   ruby2.3-dev \
   nodejs
 
-ENV IMAGEMAGICK_VERSION 7.0.1-2
 RUN cd /tmp \
-  && curl -O http://www.imagemagick.org/download/ImageMagick-$IMAGEMAGICK_VERSION.tar.gz \
-  && tar -xzvf ImageMagick-$IMAGEMAGICK_VERSION.tar.gz \
-  && chown -R root:root ImageMagick-$IMAGEMAGICK_VERSION \
-  && cd ImageMagick-$IMAGEMAGICK_VERSION \
+  && curl -O http://www.imagemagick.org/download/ImageMagick.tar.gz \
+  && tar -xzvf ImageMagick.tar.gz \
+  && chown -R root:root ImageMagick \
+  && cd ImageMagick \
   && ./configure \
   && make \
   && make install \
