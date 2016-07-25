@@ -2,33 +2,19 @@
 
 Extended Phusion Passenger Docker image
 
-## Features (per version)
+## Features
 
-### 2.3
-
-- Ubuntu 14.04 LTS
+- Ubuntu 16.04 LTS
 - Phusion Passenger 5.0.15 with nginx enabled
-- Ruby 2.3 incl. dev headers
-- Bundler
-- ImageMagick 7.0.2-4
+- Ruby 2.3 (incl. dev headers) or Ruby 2.1
+- Bundler 1.12.5
+- ImageMagick 7
 - MySQL 5.5 client incl. dev headers
 - PostgreSQL 9.4 client incl. dev headers
-- Node.js 0.12.13
+- Node.js 4.2.6
 - Webpack 1.13.0
 - Bower 1.7.9
 
-
-### 2.1-apache
-
-- Ubuntu 14.04 LTS
-- Phusion Passenger 4.0.57 with Apache enabled
-- Ruby 2.1.5 on RVM
-- Bundler
-- ImageMagick
-- PostgreSQL 9.4 client
-- Node.js 5.10.1
-- Webpack 1.13.0
-- Bower 1.7.9
 
 ## Licence
 
