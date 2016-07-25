@@ -18,12 +18,10 @@ RUN apt-get update && apt-get install -y \
   nodejs \
   npm
 
-ENV IMAGEMAGICK_VERSION 7.0.2-4
 RUN cd /tmp \
-  && curl -O http://www.imagemagick.org/download/releases/ImageMagick-$IMAGEMAGICK_VERSION.tar.gz \
-  && tar -xzvf ImageMagick-$IMAGEMAGICK_VERSION.tar.gz \
-  && chown -R root:root ImageMagick-$IMAGEMAGICK_VERSION \
-  && cd ImageMagick-$IMAGEMAGICK_VERSION \
+  && curl -O http://www.imagemagick.org/download/ImageMagick.tar.gz \
+  && tar -xzvf ImageMagick.tar.gz \
+  && cd ImageMagick* \
   && ./configure \
   && make \
   && make install \

@@ -19,7 +19,7 @@ services:
       - 80
     volumes:
       - .:/home/app
-      - .docker/nginx/2.1/sites-enabled:/etc/apache2/sites-enabled
+      - .docker/nginx/2.1/sites-enabled:/etc/nginx/sites-enabled
       - .docker/init.d/init.sh:/etc/my_init.d/init.sh
     ports:
       - "8081:80"
