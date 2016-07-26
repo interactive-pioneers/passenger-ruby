@@ -26,13 +26,13 @@ services:
     environment:
       - RAILS_ENV=test
       - PASSENGER_APP_ENV=test
-  web215rvm:
-    build: ../2.1.5-rvm
+  web215:
+    build: ../2.1.5
     expose:
       - 80
     volumes:
       - .:/home/app
-      - .docker/nginx/2.1.5-rvm/sites-enabled:/etc/nginx/sites-enabled
+      - .docker/nginx/2.1.5/sites-enabled:/etc/nginx/sites-enabled
       - .docker/init.d/init.sh:/etc/my_init.d/init.sh
     ports:
       - "8082:80"

@@ -37,4 +37,4 @@ test 2.3 web23
 
 dependencies+=(rvm)
 filepaths+=(/root/.bash_profile)
-test 2.1.5-rvm web215rvm
+test 2.1.5 web215
