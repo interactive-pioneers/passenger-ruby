@@ -7,26 +7,19 @@ function test {
 
   version=$1
   container=$2
-  components=$3
-  filepaths=$4
 
-  printf "\nTesting version $version\n"
+  printf "\nTesting version $version\n "
 
   docker-compose exec $container bundle
 
-  printf "\nChecking components..."
-  for component in $components
+  printf "\nChecking dependencies...\n"
+  for dependency in "${dependencies[@]}"
   do
-    if [[ -z  $(docker-compose exec $container bash -lc "which $component") ]]; then
-      printf "\n$component not found! Test failed.\n"
-      exit 1
-    else
-      printf "\n$component found."
-    fi
+    docker-compose exec $container bash -lc "which $dependency" || (printf "\n$dependency not found! Test failed.\n"; exit 1)
   done
 
   printf "\nChecking filepaths..."
-  for filepath in $filepaths
+  for filepath in "${filepaths[@]}"
   do
     docker-compose exec $container test -e $filepath \
       && printf "\n$filepath found." \
@@ -36,9 +29,12 @@ function test {
   printf "\n$version test complete. All tests successful.\n"
 }
 
-dependencies="mysql psql npm node webpack bower convert ruby"
-files="/etc/nginx/sites-enabled/test.conf /home/app/Gemfile"
+declare -a dependencies=(mysql psql npm node webpack bower convert ruby)
+declare -a filepaths=(/etc/nginx/sites-enabled/test.conf /home/app/Gemfile)
 
-test 2.1.5-rvm web215rvm "$dependencies rvm" "$files /root/.bash_profile"
-test 2.1 web21 $dependencies $files
-test 2.3 web23 $dependencies $files
+test 2.1 web21
+test 2.3 web23
+
+dependencies+=(rvm)
+filepaths+=(/root/.bash_profile)
+test 2.1.5-rvm web215rvm
