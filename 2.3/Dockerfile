@@ -16,16 +16,8 @@ RUN apt-get update && apt-get install -y \
   postgresql-client \
   ruby2.3-dev \
   nodejs \
-  npm
-
-RUN cd /tmp \
-  && curl -O http://www.imagemagick.org/download/ImageMagick.tar.gz \
-  && tar -xzvf ImageMagick.tar.gz \
-  && cd ImageMagick* \
-  && ./configure \
-  && make \
-  && make install \
-  && ldconfig /usr/local/lib
+  npm \
+  imagemagick
 
 RUN gem install bundler --no-ri --no-rdoc
 

@@ -17,20 +17,12 @@ RUN apt-get update && apt-get install -y \
   libpq-dev \
   postgresql-client \
   nodejs \
-  npm
+  npm \
+  imagemagick
 
 ENV RUBY_VERSION 2.1.5
 RUN gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 RUN curl -L https://get.rvm.io | bash -s stable --ruby=$RUBY_VERSION --gems=bundler
-
-RUN cd /tmp \
-  && curl -O http://www.imagemagick.org/download/ImageMagick.tar.gz \
-  && tar -xzvf ImageMagick.tar.gz \
-  && cd ImageMagick* \
-  && ./configure \
-  && make \
-  && make install \
-  && ldconfig /usr/local/lib
 
 RUN gem install bundler --no-ri --no-rdoc
 
