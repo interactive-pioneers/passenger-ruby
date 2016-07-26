@@ -11,7 +11,7 @@ function test {
   docker-compose exec $container bundle
   for component in $components
   do
-    if [[ -z  $(docker-compose exec $container which $component) ]]; then
+    if [[ -z  $(docker-compose exec $container bash -lc "which $component") ]]; then
       printf "\n$component not found! Test failed.\n"
       exit 1
     fi
@@ -19,7 +19,7 @@ function test {
   printf "\n$version test complete. All components identified.\n"
 }
 
-dependencies="mysql psql npm node webpack bower convert"
+dependencies="mysql psql npm node webpack bower convert ruby"
 
 test 2.1.5-rvm web215rvm "$dependencies rvm"
 test 2.1 web21 $dependencies
