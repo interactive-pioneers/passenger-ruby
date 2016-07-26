@@ -6,7 +6,7 @@ Extended Phusion Passenger Docker image
 
 - Ubuntu 16.04 LTS
 - Phusion Passenger 5.0.15 with nginx enabled
-- Ruby 2.3 (incl. dev headers) or Ruby 2.1
+- Ruby 2.3 (incl. dev headers), Ruby 2.1 or Ruby 2.1.5 with RVM
 - Bundler 1.12.5
 - ImageMagick 7
 - MySQL 5.5 client incl. dev headers
