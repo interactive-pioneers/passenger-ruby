@@ -24,7 +24,7 @@ function test {
 
   for filepath in $filepaths
   do
-    if [ ! -f $filepath ]; then
+    if [[ -z  $(docker-compose exec $container test -e $filepath) ]]; then
       printf "\n$filepath not found! Test failed."
       exit 1
     fi
