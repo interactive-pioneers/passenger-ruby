@@ -2,10 +2,11 @@
 
 set -e
 
-
+# Universal tests
 function test {
   version=$1
   container=$2
+  components=$3
   printf "\nTesting version $version\n"
   docker-compose exec $container bundle
   for component in $components
@@ -18,7 +19,8 @@ function test {
   printf "\n$version test complete. All components identified.\n"
 }
 
-components="mysql psql npm node webpack bower convert"
+dependencies="mysql psql npm node webpack bower convert"
 
-test 2.1 web21
-test 2.3 web23
+test 2.1.5-rvm web215rvm "$dependencies rvm"
+test 2.1 web21 $dependencies
+test 2.3 web23 $dependencies
