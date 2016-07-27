@@ -29,12 +29,10 @@ function test {
   printf "\n$version test complete. All tests successful.\n"
 }
 
-declare -a dependencies=(mysql psql npm node webpack bower convert ruby wget)
+declare -a dependencies=(mysql psql npm node webpack bower convert ruby wget rvm)
 declare -a filepaths=(/etc/nginx/sites-enabled/test.conf /home/app/Gemfile)
 
 test 2.1 web21
 test 2.3 web23
 test 2.2 web22
-
-dependencies+=(rvm)
 test 2.1.5 web215
