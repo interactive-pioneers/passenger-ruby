@@ -14,6 +14,7 @@ Extended Phusion Passenger Docker image
 - Node.js 4.2.6
 - Webpack 1.13.0
 - Bower 1.7.9
+- Wget 1.17.1
 
 
 ## Licence
