@@ -39,3 +39,16 @@ services:
     environment:
       - RAILS_ENV=test
       - PASSENGER_APP_ENV=test
+  web22:
+    build: ../2.2
+    expose:
+      - 80
+    volumes:
+      - .:/home/app
+      - .docker/nginx/2.2/sites-enabled:/etc/nginx/sites-enabled
+      - .docker/init.d/init.sh:/etc/my_init.d/init.sh
+    ports:
+      - "8083:80"
+    environment:
+      - RAILS_ENV=test
+      - PASSENGER_APP_ENV=test

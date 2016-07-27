@@ -34,6 +34,7 @@ declare -a filepaths=(/etc/nginx/sites-enabled/test.conf /home/app/Gemfile)
 
 test 2.1 web21
 test 2.3 web23
+test 2.2 web22
 
 dependencies+=(rvm)
 test 2.1.5 web215
