@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y \
   npm \
   imagemagick
 
-RUN rvm install 2.1.5 && rvm use 2.1.5 --default
+RUN bash -lc "rvm uninstall 2.1.9 && rvm install 2.1.5"
 
 RUN gem install bundler --no-ri --no-rdoc
 
