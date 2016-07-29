@@ -44,3 +44,7 @@ test 2.1 2.1.9 web21
 test 2.3 2.3.1 web23
 test 2.2 2.2.5 web22
 test 2.1.5 2.1.5 web215
+
+declare -a dependencies=(psql npm node bower convert ruby wget rvm)
+declare -a filepaths=(/etc/apache2/sites-enabled/test.conf /docker/Gemfile)
+test 2.1.5-p4a2 2.1.5 web215p4a2

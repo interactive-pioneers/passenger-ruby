@@ -2,7 +2,7 @@
 
 Extended Phusion Passenger Docker image
 
-## Features
+## Features of versions 2.1 through 2.3
 
 - Ubuntu 16.04 LTS
 - Phusion Passenger 5.0.15 with nginx enabled
@@ -15,6 +15,18 @@ Extended Phusion Passenger Docker image
 - Webpack 1.13.0
 - Bower 1.7.9
 - Wget 1.17.1
+
+### Features of 2.1.5-p4a2 version
+
+- Ubuntu 14.04 LTS
+- Phusion Passenger 4.0.57 with Apache enabled
+- Ruby 2.1.5
+- Bundler 1.12.5
+- ImageMagick 6.7.7
+- PostgreSQL 9.4
+- Node.js 0.10.25
+- Bower 1.7.9
+- Wget 1.15
 
 ## Licence
 
