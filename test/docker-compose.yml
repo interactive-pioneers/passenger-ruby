@@ -6,33 +6,21 @@ services:
       - .:/home/app
       - .docker/nginx/2.3/sites-enabled:/etc/nginx/sites-enabled
       - .docker/init.d/init.sh:/etc/my_init.d/init.sh
-    environment:
-      - RAILS_ENV=test
-      - PASSENGER_APP_ENV=test
   web21:
     build: ../2.1
     volumes:
       - .:/home/app
       - .docker/nginx/2.1/sites-enabled:/etc/nginx/sites-enabled
       - .docker/init.d/init.sh:/etc/my_init.d/init.sh
-    environment:
-      - RAILS_ENV=test
-      - PASSENGER_APP_ENV=test
   web215:
     build: ../2.1.5
     volumes:
       - .:/home/app
       - .docker/nginx/2.1.5/sites-enabled:/etc/nginx/sites-enabled
       - .docker/init.d/init.sh:/etc/my_init.d/init.sh
-    environment:
-      - RAILS_ENV=test
-      - PASSENGER_APP_ENV=test
   web22:
     build: ../2.2
     volumes:
       - .:/home/app
       - .docker/nginx/2.2/sites-enabled:/etc/nginx/sites-enabled
       - .docker/init.d/init.sh:/etc/my_init.d/init.sh
-    environment:
-      - RAILS_ENV=test
-      - PASSENGER_APP_ENV=test
