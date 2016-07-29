@@ -11,7 +11,7 @@ function test {
 
   printf "\nTesting $service\n "
 
-  docker-compose exec $container bundle
+  docker-compose exec $container bash -lc "bundle"
 
   printf "\nChecking dependencies...\n"
   for dependency in "${dependencies[@]}"
