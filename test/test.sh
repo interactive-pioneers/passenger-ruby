@@ -9,7 +9,7 @@ function test {
   version=$2
   container=$3
 
-  printf "\nTesting version $version\n "
+  printf "\nTesting $service\n "
 
   docker-compose exec $container bundle
 
@@ -34,7 +34,7 @@ function test {
   printf "\nChecking Ruby...\n"
   docker-compose run $container bash -lc "rvm use $version" || (printf "\nRuby $version not found! Test failed.\n"; exit 1)
 
-  printf "\n$version test complete. All tests successful.\n"
+  printf "\n$service test complete. All tests successful.\n"
 }
 
 declare -a dependencies=(mysql psql npm node webpack bower convert ruby wget rvm)
