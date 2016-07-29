@@ -2,30 +2,40 @@ version: '2'
 services:
   web23:
     build: ../2.3
+    ports:
+      - "80:80"
     volumes:
       - .:/home/app
       - .docker/nginx/2.3/sites-enabled:/etc/nginx/sites-enabled
       - .docker/init.d/init.sh:/etc/my_init.d/init.sh
   web21:
     build: ../2.1
+    ports:
+      - "80:80"
     volumes:
       - .:/home/app
       - .docker/nginx/2.1/sites-enabled:/etc/nginx/sites-enabled
       - .docker/init.d/init.sh:/etc/my_init.d/init.sh
   web215:
     build: ../2.1.5
+    ports:
+      - "80:80"
     volumes:
       - .:/home/app
       - .docker/nginx/2.1.5/sites-enabled:/etc/nginx/sites-enabled
       - .docker/init.d/init.sh:/etc/my_init.d/init.sh
   web22:
     build: ../2.2
+    ports:
+      - "80:80"
     volumes:
       - .:/home/app
       - .docker/nginx/2.2/sites-enabled:/etc/nginx/sites-enabled
       - .docker/init.d/init.sh:/etc/my_init.d/init.sh
   web215p4a2:
     build: ../2.1.5-p4a2
+    ports:
+      - "80:80"
     volumes:
-      - .:/home/deploy
-      - .docker/apache2/2.1.5p4a2/sites-enabled:/etc/apache2/sites-enabled
+      - .:/docker
+      - .docker/apache2/2.1.5-p4a2/sites-enabled:/etc/apache2/sites-enabled
