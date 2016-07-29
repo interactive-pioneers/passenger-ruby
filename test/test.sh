@@ -30,6 +30,9 @@ function test {
   response=$(docker-compose exec $container curl -I http://localhost 2>/dev/null | head -n 1 | cut -d$' ' -f2)
   [ "$response" == "200" ] && printf "\nResponse OK" || (printf "\nResponse failure ($response)!\n"; exit 1)
 
+  printf "\nChecking Ruby...\n"
+  docker-compose run $container bash -lc "rvm use $version" || (printf "\nRuby $version not found! Test failed.\n"; exit 1)
+
   printf "\n$version test complete. All tests successful.\n"
 }
 
