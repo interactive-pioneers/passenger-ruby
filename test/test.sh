@@ -27,11 +27,10 @@ function test {
   done
 
   printf "\n\nChecking HTTP response..."
-  host=$(docker-compose port $container 80)
-  http=$(curl -I http://$host 2>/dev/null | head -n 1 | cut -d$' ' -f2)
-  [ "$http" == "200" ] && printf "\nResponse OK" || (printf "\nResponse failure ($http)!"; exit 1)
+  response=$(docker-compose exec $container curl -I http://localhost 2>/dev/null | head -n 1 | cut -d$' ' -f2)
+  [ "$response" == "200" ] && printf "\nResponse OK" || (printf "\nResponse failure ($response)!\n"; exit 1)
 
-  printf "\n\n$version test complete. All tests successful.\n"
+  printf "\n$version test complete. All tests successful.\n"
 }
 
 declare -a dependencies=(mysql psql npm node webpack bower convert ruby wget rvm)
