@@ -5,17 +5,11 @@ MAINTAINER Ain Tohvri <at@interactive-pioneers.de>
 ENV HOME /root
 
 RUN apt-get update && apt-get install -y \
-  libxml2-dev \
-  libxslt1-dev \
   libpcre3-dev \
   libcurl4-gnutls-dev \
   libgmp3-dev \
-  libmysqlclient-dev \
   mysql-client \
-  libpq-dev \
   postgresql-client \
-  ruby2.3-dev \
-  nodejs \
   npm \
   imagemagick \
   wget

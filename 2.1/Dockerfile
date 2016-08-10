@@ -5,18 +5,11 @@ MAINTAINER Ain Tohvri <at@interactive-pioneers.de>
 ENV HOME /root
 
 RUN apt-get update && apt-get install -y \
-  libcurl4-openssl-dev \
-  libapr1-dev \
-  libaprutil1-dev \
-  libxml2-dev \
-  libxslt1-dev \
-  rsync \
-  phantomjs \
-  libmysqlclient-dev \
+  libpcre3-dev \
+  libcurl4-gnutls-dev \
+  libgmp3-dev \
   mysql-client \
-  libpq-dev \
   postgresql-client \
-  nodejs \
   npm \
   imagemagick \
   wget
