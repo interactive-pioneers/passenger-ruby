@@ -12,7 +12,6 @@ RUN apt-get update && apt-get install -y \
   libgmp3-dev \
   libmysqlclient-dev \
   mysql-client \
-  libpq-dev \
   postgresql-client \
   ruby2.3-dev \
   npm \
