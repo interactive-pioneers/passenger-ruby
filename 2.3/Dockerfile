@@ -15,7 +15,6 @@ RUN apt-get update && apt-get install -y \
   libpq-dev \
   postgresql-client \
   ruby2.3-dev \
-  nodejs \
   npm \
   imagemagick \
   wget
