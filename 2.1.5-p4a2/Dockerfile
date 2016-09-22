@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y \
   libxslt1-dev \
   rsync \
   imagemagick \
+  libmagickwand-dev \
   openjdk-6-jdk \
   phantomjs \
   postgresql-client \
