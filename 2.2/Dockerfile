@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
   postgresql-client \
   npm \
   imagemagick \
+  libmagickwand-dev \
   wget
 
 RUN gem install bundler --no-ri --no-rdoc
