@@ -33,7 +33,8 @@ USER deploy
 # Install core Ruby gems incl. Passenger and its Apache module
 ENV RACK_VERSION 1.6.4
 ENV PASSENGER_VERSION 4.0.57
-RUN bash -lc "gem install rack --version $RACK_VERSION --no-ri --no-rdoc \
+RUN bash -lc "gem update bundler --no-ri --no-rdoc \
+  && gem install rack --version $RACK_VERSION --no-ri --no-rdoc \
   && gem install passenger --version $PASSENGER_VERSION --no-ri --no-rdoc \
   && passenger-install-apache2-module --auto"
 
