@@ -21,6 +21,7 @@ RUN apt-get update && apt-get install -y \
   postgresql-client \
   nodejs-legacy \
   npm \
+  graphviz \
   && apt-get autoremove -y
 
 # Initialise Apache

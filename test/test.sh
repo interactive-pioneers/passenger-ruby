@@ -37,12 +37,12 @@ function test {
   printf "\n$service test complete. All tests successful.\n"
 }
 
-declare -a dependencies=(psql npm node bower convert ruby wget rvm bundle)
+declare -a dependencies=(psql npm node bower convert ruby wget rvm bundle dot)
 declare -a filepaths=(/etc/apache2/sites-enabled/test.conf /docker/Gemfile)
 
 test 2.1.5-p4a2 2.1.5 web215p4a2
 
-declare -a dependencies=(mysql psql npm node webpack bower convert ruby wget rvm bundle)
+declare -a dependencies=(mysql psql npm node webpack bower convert ruby wget rvm bundle dot)
 declare -a filepaths=(/etc/nginx/sites-enabled/test.conf /home/app/Gemfile)
 
 test 2.1 2.1.9 web21
