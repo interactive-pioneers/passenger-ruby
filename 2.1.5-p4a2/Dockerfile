@@ -41,9 +41,6 @@ RUN bash -lc "gem update bundler --no-ri --no-rdoc \
 
 USER root
 
-# Install Bower
-RUN npm i -g bower
-
 # Configure Passenger module, vhosts. RUBY_VERSION inherited from parent image
 RUN echo "<IfModule mod_passenger.c>\n \
   PassengerRoot $HOME/.rvm/gems/ruby-$RUBY_VERSION/gems/passenger-$PASSENGER_VERSION\n \
