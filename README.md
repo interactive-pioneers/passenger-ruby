@@ -12,8 +12,6 @@ Extended Phusion Passenger Docker image
 - MySQL 5.5 client incl. dev headers
 - PostgreSQL 9.4 client incl. dev headers
 - Node.js 4.2.6
-- Webpack 1.13.0
-- Bower 1.7.9
 - Wget 1.17.1
 
 ## Features of 2.1.5-p4a2 version
@@ -25,7 +23,6 @@ Extended Phusion Passenger Docker image
 - ImageMagick 6.7.7 incl. RMagick support
 - PostgreSQL 9.4
 - Node.js 0.10.25
-- Bower 1.7.9
 - Wget 1.15
 
 ## Licence
