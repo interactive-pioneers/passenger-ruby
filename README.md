@@ -6,7 +6,7 @@ Extended Phusion Passenger Docker image
 
 - Ubuntu 16.04 LTS
 - Phusion Passenger 5.0.15 with nginx enabled
-- Ruby 2.3 (2.3.1, incl. dev headers), 2.2 (2.2.5), 2.1 (2.1.9) or 2.1.5
+- Ruby 2.3 (2.3.3, incl. dev headers), 2.2 (2.2.5), 2.1 (2.1.9) or 2.1.5
 - Bundler 1.13.1
 - ImageMagick 6.8.9 incl. RMagick support
 - MySQL 5.5 client incl. dev headers
@@ -42,7 +42,6 @@ To refer to Ruby 2.3 image with Node.js 0.10.25:
 ```
 ipioneers/passenger-ruby@sha256:5587583bfc0226ca3fb7e9e7340adcd1fc504f1d90618d7fd704ee0a1ad2c50f
 ```
-
 
 ## Licence
 
