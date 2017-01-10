@@ -19,8 +19,6 @@ RUN apt-get update && apt-get install -y \
 
 RUN gem install bundler --no-ri --no-rdoc
 
-RUN npm install -g webpack bower
-
 # Enable nginx
 RUN rm -f /etc/service/nginx/down /etc/nginx/sites-enabled/default
 
