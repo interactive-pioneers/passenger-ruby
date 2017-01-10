@@ -4,7 +4,10 @@ MAINTAINER Ain Tohvri <at@interactive-pioneers.de>
 
 USER root
 
-RUN apt-get update && apt-get install -y \
+# Install Node.js and other dependencies
+RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - \
+  && apt-get install -y \
+  nodejs \
   apache2 \
   apache2-threaded-dev \
   libcurl4-openssl-dev \
@@ -19,8 +22,6 @@ RUN apt-get update && apt-get install -y \
   openjdk-6-jdk \
   phantomjs \
   postgresql-client \
-  nodejs-legacy \
-  npm \
   graphviz \
   && apt-get autoremove -y
 

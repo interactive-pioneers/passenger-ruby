@@ -4,7 +4,10 @@ MAINTAINER Ain Tohvri <at@interactive-pioneers.de>
 
 ENV HOME /root
 
-RUN apt-get update && apt-get install -y \
+# Install Node.js and other dependencies
+RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - \
+  && apt-get install -y \
+  nodejs \
   libcurl4-openssl-dev \
   libapr1-dev \
   libaprutil1-dev \
@@ -16,8 +19,6 @@ RUN apt-get update && apt-get install -y \
   mysql-client \
   libpq-dev \
   postgresql-client \
-  nodejs \
-  npm \
   imagemagick \
   libmagickwand-dev \
   graphviz \
