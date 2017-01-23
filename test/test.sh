@@ -48,4 +48,5 @@ declare -a filepaths=(/etc/nginx/sites-enabled/test.conf /home/app/Gemfile)
 test 2.1 2.1.9 web21
 test 2.3 2.3.3 web23
 test 2.2 2.2.5 web22
+test 2.4 2.4.0 web24
 test 2.1.5 2.1.5 web215

@@ -1,5 +1,11 @@
 version: '2'
 services:
+  web24:
+    build: ../2.4
+    volumes:
+      - .:/home/app
+      - .docker/nginx/2.3/sites-enabled:/etc/nginx/sites-enabled
+      - .docker/init.d/default/init.sh:/etc/my_init.d/init.sh
   web23:
     build: ../2.3
     volumes:
