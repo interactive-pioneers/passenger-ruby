@@ -13,7 +13,6 @@ RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - \
   libgmp3-dev \
   mysql-client \
   postgresql-client \
-  ruby2.3-dev \
   imagemagick \
   libmagickwand-dev \
   graphviz \
