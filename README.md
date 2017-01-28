@@ -2,11 +2,11 @@
 
 Extended Phusion Passenger Docker image
 
-## Features of versions 2.1 through 2.3
+## Features of versions 2.1 through 2.4
 
 - Ubuntu 16.04 LTS
 - Phusion Passenger 5.0.15 with nginx enabled
-- Ruby 2.3 (2.3.3, incl. dev headers), 2.2 (2.2.5), 2.1 (2.1.9) or 2.1.5
+- Ruby 2.4, 2.3 (2.3.3, incl. dev headers), 2.2 (2.2.5), 2.1 (2.1.9) or 2.1.5
 - Bundler 1.13.1
 - ImageMagick 6.8.9 incl. RMagick support
 - MySQL 5.5 client incl. dev headers
