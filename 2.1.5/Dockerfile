@@ -7,7 +7,6 @@ ENV HOME /root
 # Install Node.js and other dependencies
 RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - \
   && apt-get install -y \
-  nodejs \
   libcurl4-openssl-dev \
   libapr1-dev \
   libaprutil1-dev \
