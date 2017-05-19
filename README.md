@@ -2,7 +2,7 @@
 
 Extended Phusion Passenger Docker image
 
-## Features of versions 2.1 through 2.4
+## Features of versions from 2.1 to 2.4
 
 - Ubuntu 16.04 LTS
 - Phusion Passenger 5.0.15 with nginx enabled
