@@ -7,7 +7,6 @@ USER root
 # Install Node.js and other dependencies
 RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - \
   && apt-get install -y \
-  nodejs \
   apache2 \
   apache2-threaded-dev \
   libcurl4-openssl-dev \
