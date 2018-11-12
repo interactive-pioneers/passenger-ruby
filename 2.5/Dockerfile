@@ -1,11 +1,11 @@
 FROM phusion/passenger-ruby25
 
-MAINTAINER Ain Tohvri <at@interactive-pioneers.de>
+MAINTAINER Ain Tohvri <at@flashbit.net>
 
 ENV HOME /root
 
 # Install Node.js and other dependencies
-RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - \
+RUN curl -sL https://deb.nodesource.com/setup_11.x | bash - \
   && apt-get install -y \
   nodejs \
   libpcre3-dev \
