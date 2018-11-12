@@ -19,7 +19,7 @@ Extended Phusion Passenger Docker image
 - Ubuntu 14.04 LTS
 - Phusion Passenger 4.0.57 with Apache enabled
 - Ruby 2.1.5
-- Bundler 1.13.1
+- Bundler 1.14.6
 - ImageMagick 6.7.7 incl. RMagick support
 - PostgreSQL 9.4
 - Node.js 7
