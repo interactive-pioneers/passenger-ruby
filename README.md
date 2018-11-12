@@ -12,6 +12,7 @@ Extended Phusion Passenger Docker image
 - MySQL client incl. dev headers
 - PostgreSQL client incl. dev headers
 - Node.js
+- Wget
 
 ## Features of 2.1.5-p4a2 version
 
