@@ -18,8 +18,6 @@ RUN curl -sL https://deb.nodesource.com/setup_11.x | bash - \
   graphviz \
   wget
 
-RUN gem install bundler --no-ri --no-rdoc
-
 # Enable nginx
 RUN rm -f /etc/service/nginx/down /etc/nginx/sites-enabled/default
 
