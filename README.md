@@ -2,17 +2,16 @@
 
 Extended Phusion Passenger Docker image
 
-## Features of versions 2.1 through 2.4
+## Features of versions 2.1 through 2.5
 
-- Ubuntu 16.04 LTS
-- Phusion Passenger 5.0.15 with nginx enabled
-- Ruby 2.4, 2.3 (2.3.3, incl. dev headers), 2.2 (2.2.5), 2.1 (2.1.9) or 2.1.5
-- Bundler 1.13.1
-- ImageMagick 6.8.9 incl. RMagick support
-- MySQL 5.5 client incl. dev headers
-- PostgreSQL 9.4 client incl. dev headers
-- Node.js 7
-- Wget 1.17.1
+- Ubuntu
+- Phusion Passenger with nginx enabled
+- Ruby 2.x
+- Bundler
+- ImageMagick incl. RMagick support
+- MySQL client incl. dev headers
+- PostgreSQL client incl. dev headers
+- Node.js
 
 ## Features of 2.1.5-p4a2 version
 
@@ -45,4 +44,4 @@ ipioneers/passenger-ruby@sha256:5587583bfc0226ca3fb7e9e7340adcd1fc504f1d90618d7f
 
 ## Licence
 
-Copyright © 2016, 2017 Interactive Pioneers GmbH, contributors. Licenced under [GPL-3](https://github.com/interactive-pioneers/passenger-ruby/blob/master/LICENSE).
+Copyright © 2016-2018 Interactive Pioneers GmbH, contributors. Licenced under [GPL-3](https://github.com/interactive-pioneers/passenger-ruby/blob/master/LICENSE).
